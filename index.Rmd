@@ -5,6 +5,24 @@ output:
     css: style.css
 ---
 
+
+<div style="border: 2px solid #ccc; border-radius: 10px; padding: 20px; background-color: #f9f9f9;">
+
+## 🏃‍♂️ Anton’s Run 2025
+
+Join us for a friendly community run honoring the legacy of Anton Davitaia.
+
+**📅 Date:** 6 August  
+**🕘 Time:** 09:00  
+**📍 Starting Point:** [Ontopo](routes.html)
+**🗺️ Route:** Through the areas where his group once trained
+
+</div>
+
+</p>
+
+
+
 ## Anton’s Run – Honoring a Legacy of Athletics and Community
 In memory of Anton (Jemali) Davitaia
 
