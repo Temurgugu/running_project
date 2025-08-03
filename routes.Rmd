@@ -11,76 +11,17 @@ library(leaflet)
 library(DT)
 library(dplyr)
 library(readr)
-```
-
-
-```{r }
-
-
-# Read GPX file for Anton's run
-tryCatch({
-  # Try to read the GPX file
-  gpx_data <- st_read("data/Anton's run.gpx", layer = "tracks", quiet = TRUE)
-  
-  # Extract coordinates
-  coords <- st_coordinates(gpx_data)
-  anton_route_lat <- coords[, "Y"]
-  anton_route_lng <- coords[, "X"]
-  
-  # Calculate center point
-  anton_center_lat <- mean(anton_route_lat)
-  anton_center_lng <- mean(anton_route_lng)
-  
-  gpx_loaded <- TRUE
-}, error = function(e) {
-  # Fallback coordinates if GPX file can't be read
-  anton_center_lat <- 42.2574
-  anton_center_lng <- 42.7089
-  gpx_loaded <- FALSE
-})
-
-# Create route data including Anton's run
-routes <- data.frame(
-  route_name = c("Anton's Run", "Countryside Loop", "Forest Trail", "Village Circuit"),
-  lat = c(anton_center_lat, 40.7128, 40.7589, 40.7282),
-  lng = c(anton_center_lng, -74.0060, -73.9851, -73.9942),
-  distance_km = c(3.66, 5.2, 8.1, 3.8),
-  elevation_m = c(38, 65, 120, 25),
-  difficulty = c("Easy-Moderate", "Easy", "Moderate", "Easy"),
-  strava_url = c("https://www.strava.com/routes/2976063228100262196", "", "", "")
-)
-
-# Create interactive map
-map <- leaflet(routes) %>%
-  addTiles() %>%
-  addMarkers(
-    lng = ~lng, 
-    lat = ~lat,
-    popup = ~paste("<b>", route_name, "</b><br>",
-                   "Distance: ", distance_km, " km<br>",
-                   "Elevation: ", elevation_m, " m<br>",
-                   "Difficulty: ", difficulty,
-                   ifelse(strava_url != "", paste0("<br><a href='", strava_url, "' target='_blank'>View on Strava</a>"), "")),
-    label = ~route_name
-  )
-
-# Add GPX track if loaded successfully
-if (exists("gpx_loaded") && gpx_loaded && exists("anton_route_lat")) {
-  map <- map %>%
-    addPolylines(
-      lng = anton_route_lng,
-      lat = anton_route_lat,
-      color = "#8B7355",
-      weight = 4,
-      opacity = 0.8,
-      popup = "Anton's Run - Full GPS Track"
-    )
-}
-
-# Set map view
-map %>% setView(lng = anton_center_lng, lat = anton_center_lat, zoom = 14)
+library(sf)
 
 ```
+
+## Anton's Run - Strava Route
+
+
+<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/routes/2976063228100262196/embed'></iframe>
+
+
+## Runner Times & Leaderboard
 
 
 ```{r }

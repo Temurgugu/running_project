@@ -5,14 +5,4 @@ output:
     css: style.css
 ---
 
-# About Rural Running
-
-Our running group was founded to explore the beautiful countryside routes around our area. We believe in:
-
-- **Community**: Supporting each other in our running journeys
-- **Exploration**: Discovering new paths and scenic routes
-- **Wellness**: Promoting healthy, active lifestyles
-- **Environment**: Appreciating and preserving our rural landscapes
-
-## Join Us
-New runners are always welcome! Contact us through our weekly meetups or check out our route recommendations.
+Anton’s Run is a community event held in honor of Anton (Jemali) Davitaia — a dedicated coach who spent over 50 years inspiring young athletes. The route follows the paths where he trained generations of runners, many of whom became professionals. This friendly run celebrates his lasting impact and brings people together through the spirit of sport.
