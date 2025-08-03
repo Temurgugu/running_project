@@ -7,18 +7,20 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(gpx)
 library(leaflet)
-library(DT)
+library(ggplot2)
 library(dplyr)
-library(readr)
-library(sf)
+library(lubridate)
+library(DT)
+library(plotly)
+library(tidyverse)
 
 ```
 
 ## Anton's Run - Strava Route
 
-
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/routes/2976063228100262196/embed'></iframe>
+<div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="2976063228100262196" data-full-width="true" data-style="satellite" data-surface-type="true" data-map-hash="13.58/42.25777/42.25777" data-from-embed="true"></div><script src="https://strava-embeds.com/embed.js"></script>
 
 
 ## Runner Times & Leaderboard
