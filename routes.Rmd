@@ -20,7 +20,8 @@ library(tidyverse)
 
 ## Anton's Run - Strava Route
 
-<div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="2976063228100262196" data-full-width="true" data-style="satellite" data-surface-type="true" data-map-hash="13.58/42.25777/42.25777" data-from-embed="true"></div><script src="https://strava-embeds.com/embed.js"></script>
+<div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="2976063228100262196" data-full-width="true" data-style="satellite" data-surface-type="true" data-map-hash="13.57/42.25777/42.25777" data-from-embed="true"></div><script src="https://strava-embeds.com/embed.js"></script>
+
 
 
 ## Runner Times & Leaderboard
@@ -49,3 +50,8 @@ DT::datatable(
 )
 
 ```
+
+
+
+## Start
+![](image/IMG_20200829_135559.jpg)
