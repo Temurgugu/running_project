@@ -1,0 +1,12 @@
+name: "Running Routes Website"
+navbar:
+  title: "Rural Running"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Routes"
+      href: routes.html
+    - text: "About"
+      href: about.html
+output_dir: "_site"
+include: ["style.css", "data/"]

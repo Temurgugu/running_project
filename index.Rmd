@@ -1,0 +1,16 @@
+---
+title: "Welcome to Rural Running"
+output: 
+  html_document:
+    css: style.css
+---
+
+## Anton’s Run – Honoring a Legacy of Athletics and Community
+In memory of Anton (Jemali) Davitaia
+
+Anton’s Run begins at the memorial of Anton (Jemali) Davitaia, a beloved coach who dedicated over five decades of his life to introducing athletics to generations of young people. Through his guidance and passion, many of them went on to become professional athletes — but more importantly, they carried forward his values of discipline, perseverance, and community spirit.
+
+This friendly run takes place in the very areas where Anton and his training group once ran, trained, and inspired one another. It’s more than a sporting event — it’s a celebration of a legacy, a tribute to a mentor, and a moment to bring together all those who believe in the power of sport to shape lives.
+
+Join us to  [run](routes.html), remember, and reconnect.
+

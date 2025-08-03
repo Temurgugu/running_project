@@ -1,0 +1,18 @@
+---
+title: "About Us"
+output: 
+  html_document:
+    css: style.css
+---
+
+# About Rural Running
+
+Our running group was founded to explore the beautiful countryside routes around our area. We believe in:
+
+- **Community**: Supporting each other in our running journeys
+- **Exploration**: Discovering new paths and scenic routes
+- **Wellness**: Promoting healthy, active lifestyles
+- **Environment**: Appreciating and preserving our rural landscapes
+
+## Join Us
+New runners are always welcome! Contact us through our weekly meetups or check out our route recommendations.

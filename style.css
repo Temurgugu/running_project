@@ -1,0 +1,144 @@
+## 5. style.css (Rural Theme)
+```css
+/* Rural Running Website Theme */
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F5E;
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #00b894 !important;
+    border-bottom: 3px solid #00cec9;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5em !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link:focus {
+    color: white !important;
+}
+
+h1, h2, h3 {
+    color: #2d3436;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    border-bottom: 3px solid #8B7355;
+    padding-bottom: 10px;
+    color: #8B7355;
+}
+
+h2 {
+    color: #5D4E37;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #A0522D;
+}
+
+/* Container styling */
+.container, .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Map container */
+.leaflet-container {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Table styling */
+.dataTables_wrapper {
+    margin: 20px 0;
+}
+
+table.dataTable {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+table.dataTable thead th {
+    background-color: #8B7355;
+    color: white;
+    border-bottom: 2px solid #5D4E37;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #f1f2f6;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Route detail boxes */
+h3 + ul {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #8B7355;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    color: #8B7355;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5D4E37;
+    text-decoration: underline;
+}
+
+/* Rural-themed accents */
+.highlight-box {
+    background: linear-gradient(135deg, #8B7355, #A0522D);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .leaflet-container {
+        height: 300px !important;
+    }
+}
