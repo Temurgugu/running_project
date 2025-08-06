@@ -24,7 +24,7 @@ library(tidyverse)
 
 
 
-## Runner Times & Leaderboard
+## Runner Times & Leaderboard 2025
 
 
 ```{r }
@@ -34,10 +34,9 @@ runner_times <- read_csv("data/runner_data.csv")
 # Create interactive table
 DT::datatable(
   runner_times %>%
-    arrange(route, time_minutes) %>%
+    arrange(route, minutes, seconds) %>%
     mutate(
-      time_formatted = paste0(floor(time_minutes), ":", 
-                             sprintf("%02d", round((time_minutes %% 1) * 60)))
+      time_formatted = paste0(minutes, ":", sprintf("%02d", seconds))
     ) %>%
     select(runner_name, route, time_formatted, date),
   colnames = c("Runner Name", "Route", "Time (MM:SS)", "Date"),
